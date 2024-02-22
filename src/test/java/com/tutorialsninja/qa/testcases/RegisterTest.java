@@ -15,7 +15,7 @@ public class RegisterTest extends Base {
 
 	// Variable
 	// Declaration of WebDriver variable[driver] to interact with the browser
-	//Updated Comment
+	//Updated Commen and Update
 	public WebDriver driver;
 	RegisterPage registerPage; 
 	AccountSuccessPage accountSuccessPage;
