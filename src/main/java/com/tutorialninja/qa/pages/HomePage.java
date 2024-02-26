@@ -66,6 +66,13 @@ public class HomePage {
 		
 	}
 	
+	public LogoutPage selectLogoutOption() {
+		
+		loginOption.click();
+		return new LogoutPage(driver);
+		
+	}
+	
 	public LoginPage naviageToLoginPage() {
 		
 		myAccountDropMenu.click();
@@ -73,6 +80,8 @@ public class HomePage {
 		return new LoginPage(driver);
 		
 	}
+	
+	
 	
 	public RegisterPage selectRegisterOption() {
 		
