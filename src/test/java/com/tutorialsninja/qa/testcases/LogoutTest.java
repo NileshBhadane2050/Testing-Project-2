@@ -58,7 +58,28 @@ public class LogoutTest extends Base {
 	    Assert.assertEquals(actualLogoutMessage,expectedlogoutMessage,"Logout message is incorrect");
 	}
 	
-	
-	  
+	@Test(priority = 2)
+	public void VerifyLoggingOutAndBrowsingBack() {
+	    logoutPage.enterEmailAddress(prop.getProperty("validEmail"));
+	    logoutPage.enterPassword(prop.getProperty("validPassword"));
+	    logoutPage.clickOnLoginButton();
+	    logoutPage.clickOnMyAccount();
+	    logoutPage.clickOnLogout();
+	    String actualLogoutMessage = logoutPage.retriveLogoutMessage();
+	    String expectedLogoutMessage = "You have been logged off your account. It is now safe to leave the computer.";
+	    Assert.assertEquals(actualLogoutMessage, expectedLogoutMessage, "Logout message is incorrect");    
+	    // Close the browser
+	    driver.quit();	    
+	    // Reopen the browser
+	    driver = initializeBrowserAndOpenApplicatiOnURL(prop.getProperty("browserName"));
+	    HomePage homePage = new HomePage(driver);
+	    homePage.clickOnMyAccount();	    
+	    logoutPage = homePage.selectLogoutOption();
+	    // Verify login message
+	    String actualLoginMessage = logoutPage.loginMessage();
+	    String expectedLoginMessage = "I am a returning customer";
+	    Assert.assertEquals(actualLoginMessage, expectedLoginMessage, "LoginPage message is incorrect");
+	}
 
+	
 }

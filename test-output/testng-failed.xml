@@ -6,8 +6,8 @@
       <class name="com.tutorialsninja.qa.testcases.LogoutTest">
         <methods>
           <include name="setup"/>
+          <include name="VerifyLoggingOutAndBrowsingBack"/>
           <include name="teardown"/>
-          <include name="verifyLoginWithValidCredentials"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.LogoutTest -->
     </classes>

@@ -38,6 +38,16 @@ public class LogoutPage extends LoginPage {
     	
     }
     
+    @FindBy(xpath = "//p//strong[1][contains(.,'I am a returning customer')]")
+    private WebElement actualLoginMessage;
+    
+    public String loginMessage() {
+    	
+    	String RegisterMessage = actualLoginMessage.getText();
+    	return RegisterMessage;
+		
+	}
+    
     
     
     
