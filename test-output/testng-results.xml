@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-06T12:56:10 IST" name="Default suite" finished-at="2024-03-06T12:56:14 IST" duration-ms="4224">
+  <suite started-at="2024-03-06T13:51:44 IST" name="Default suite" finished-at="2024-03-06T13:51:48 IST" duration-ms="3459">
     <groups>
     </groups>
-    <test started-at="2024-03-06T12:56:10 IST" name="Default test" finished-at="2024-03-06T12:56:14 IST" duration-ms="4224">
+    <test started-at="2024-03-06T13:51:44 IST" name="Default test" finished-at="2024-03-06T13:51:48 IST" duration-ms="3459">
       <class name="com.tutorialsninja.qa.testcases.SearchTest">
-        <test-method is-config="true" signature="setep()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchTest@293a5bf6]" started-at="2024-03-06T12:56:10 IST" name="setep" finished-at="2024-03-06T12:56:13 IST" duration-ms="3303" status="PASS">
+        <test-method is-config="true" signature="setep()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchTest@293a5bf6]" started-at="2024-03-06T13:51:44 IST" name="setep" finished-at="2024-03-06T13:51:47 IST" duration-ms="2535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setep -->
-        <test-method signature="verifyProductAddedSucessfuly()[pri:4, instance:com.tutorialsninja.qa.testcases.SearchTest@293a5bf6]" started-at="2024-03-06T12:56:13 IST" name="verifyProductAddedSucessfuly" finished-at="2024-03-06T12:56:14 IST" duration-ms="736" status="PASS">
+        <test-method signature="verifyProductAddedSucessfuly()[pri:4, instance:com.tutorialsninja.qa.testcases.SearchTest@293a5bf6]" started-at="2024-03-06T13:51:47 IST" name="verifyProductAddedSucessfuly" finished-at="2024-03-06T13:51:48 IST" duration-ms="740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductAddedSucessfuly -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchTest@293a5bf6]" started-at="2024-03-06T12:56:14 IST" name="teardown" finished-at="2024-03-06T12:56:14 IST" duration-ms="153" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchTest@293a5bf6]" started-at="2024-03-06T13:51:48 IST" name="teardown" finished-at="2024-03-06T13:51:48 IST" duration-ms="150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
