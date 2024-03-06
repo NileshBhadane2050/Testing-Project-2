@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-27T20:58:37 IST" name="Default suite" finished-at="2024-02-27T20:58:49 IST" duration-ms="11935">
+  <suite started-at="2024-03-06T12:56:10 IST" name="Default suite" finished-at="2024-03-06T12:56:14 IST" duration-ms="4224">
     <groups>
     </groups>
-    <test started-at="2024-02-27T20:58:37 IST" name="Default test" finished-at="2024-02-27T20:58:49 IST" duration-ms="11935">
-      <class name="com.tutorialsninja.qa.testcases.LogoutTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialsninja.qa.testcases.LogoutTest@313ac989]" started-at="2024-02-27T20:58:38 IST" name="setup" finished-at="2024-02-27T20:58:43 IST" duration-ms="5508" status="PASS">
+    <test started-at="2024-03-06T12:56:10 IST" name="Default test" finished-at="2024-03-06T12:56:14 IST" duration-ms="4224">
+      <class name="com.tutorialsninja.qa.testcases.SearchTest">
+        <test-method is-config="true" signature="setep()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchTest@293a5bf6]" started-at="2024-03-06T12:56:10 IST" name="setep" finished-at="2024-03-06T12:56:13 IST" duration-ms="3303" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VerifyLoggingOutAndBrowsingBack()[pri:2, instance:com.tutorialsninja.qa.testcases.LogoutTest@313ac989]" started-at="2024-02-27T20:58:43 IST" name="VerifyLoggingOutAndBrowsingBack" finished-at="2024-02-27T20:58:49 IST" duration-ms="6260" status="PASS">
+        </test-method> <!-- setep -->
+        <test-method signature="verifyProductAddedSucessfuly()[pri:4, instance:com.tutorialsninja.qa.testcases.SearchTest@293a5bf6]" started-at="2024-03-06T12:56:13 IST" name="verifyProductAddedSucessfuly" finished-at="2024-03-06T12:56:14 IST" duration-ms="736" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyLoggingOutAndBrowsingBack -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorialsninja.qa.testcases.LogoutTest@313ac989]" started-at="2024-02-27T20:58:49 IST" name="teardown" finished-at="2024-02-27T20:58:49 IST" duration-ms="135" status="PASS">
+        </test-method> <!-- verifyProductAddedSucessfuly -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tutorialsninja.qa.testcases.SearchTest@293a5bf6]" started-at="2024-03-06T12:56:14 IST" name="teardown" finished-at="2024-03-06T12:56:14 IST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.tutorialsninja.qa.testcases.LogoutTest -->
+      </class> <!-- com.tutorialsninja.qa.testcases.SearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

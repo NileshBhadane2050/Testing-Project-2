@@ -1,11 +1,9 @@
 package com.tutorialsninja.qa.testcases;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.tutorialninja.qa.pages.HomePage;
 import com.tutorialninja.qa.pages.SearchPage;
 import com.tutorialsninja.qa.base.Base;
@@ -24,6 +22,7 @@ public class SearchTest extends Base {
 		@BeforeMethod
 		public void setep() {
 			driver = initializeBrowserAndOpenApplicatiOnURL(prop.getProperty("browserName"));
+			 searchPage = new SearchPage(driver); // Initialize the searchPage object
 		
 		}
 		
@@ -58,8 +57,17 @@ public class SearchTest extends Base {
 		 String actualSearchMessage = searchPage.retrieveNoProductMessageText();
 		 Assert.assertEquals(actualSearchMessage,dataProp.getProperty("NoProductTextInSearchResults"),"No Product in search result is not displayed");	
 	
-	
-	
+	}
+	@Test (priority = 4)
+	public void verifyProductAddedSucessfuly() throws InterruptedException {
+		
+		 HomePage homePage = new HomePage(driver);
+		 homePage.searchForAProduct("HP");
+		 homePage.addWishButton();
+		 //String ActualMessage = searchPage.retriveWishListAddMessageText();
+		 String messagee = searchPage.retriveWishListAddMessageText();
+		 System.out.println(messagee);
+		 
 	}
 
 }

@@ -25,73 +25,77 @@ public class HomePage {
 	@FindBy(xpath = "//div[@id='search']/descendant::button")
 	private WebElement searchButton;
 
+	@FindBy(xpath = "(//button[@type='button'])[11]")
+	private WebElement addWishButton;
+
 	public HomePage(WebDriver driver) {
 
 		this.driver = driver;
 		PageFactory.initElements(driver, this); // we can also write this
-
 	}
 
 	// Actions
 	public SearchPage clickOnSearchButton() {
 		searchButton.click();
 		return new SearchPage(driver);
-		
+
 	}
-//	
-//	public SearchPage searchForAProduct(String productText) {
-//		
-//		searchBoxField.sendKeys(productText);
-//		searchButton.click();
-//		return new SearchPage(driver);
-//		
-//	}
-	
-	public void enterProductIntoSearchBoxField(String productText) {
-		
+
+	public void addWishButton() {
+		addWishButton.click();
+	}
+
+	public SearchPage searchForAProduct(String productText) {
+
 		searchBoxField.sendKeys(productText);
-		
+		searchButton.click();
+		return new SearchPage(driver);
+
 	}
-	
+
+	public void enterProductIntoSearchBoxField(String productText) {
+
+		searchBoxField.sendKeys(productText);
+
+	}
+
 	public void clickOnMyAccount() {
-		
+
 		myAccountDropMenu.click();
-		
+
 	}
-	
+
 	public LoginPage selectLoginOption() {
-		
+
 		loginOption.click();
 		return new LoginPage(driver);
-		
+
 	}
-	
+
 	public LogoutPage selectLogoutOption() {
-		
+
 		loginOption.click();
 		return new LogoutPage(driver);
-		
+
 	}
-	
+
 	public LoginPage naviageToLoginPage() {
-		
+
 		myAccountDropMenu.click();
 		loginOption.click();
 		return new LoginPage(driver);
-		
+
 	}
-	
-	
-	
+
 	public RegisterPage selectRegisterOption() {
-		
+
 		registerOption.click();
 		return new RegisterPage(driver);
-		
+
 	}
-	
+
 	public RegisterPage navigateToRegisterPage() {
-		
+
 		myAccountDropMenu.click();
 		registerOption.click();
 		return new RegisterPage(driver);
