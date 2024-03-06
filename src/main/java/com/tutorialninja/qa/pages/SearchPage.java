@@ -15,11 +15,19 @@ public class SearchPage {
 	@FindBy(xpath = "//div[@id='content']/h2/following-sibling::p")
 	private WebElement noProductMessage;
 
+	@FindBy(className = "alert-success")
+	private WebElement wishListElement;
+
 	public SearchPage(WebDriver driver) {
 
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
+	}
+
+	public String retriveWishListAddMessageText() {
+		String wishlistMessage = wishListElement.getText();
+		return wishlistMessage;
 	}
 
 	public String retrieveNoProductMessageText() {
