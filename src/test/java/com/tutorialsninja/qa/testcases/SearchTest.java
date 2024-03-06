@@ -11,7 +11,7 @@ import com.tutorialsninja.qa.base.Base;
 public class SearchTest extends Base {
 	
 	//Variable
-		// Declaration of WebDriver variable[driver] to interact with the browser
+		// Declaration of WebDriver variable[driver] to interacts with the browser
 		public WebDriver driver;
 		SearchPage searchPage;
 		//Methods
@@ -64,10 +64,9 @@ public class SearchTest extends Base {
 		 HomePage homePage = new HomePage(driver);
 		 homePage.searchForAProduct("HP");
 		 homePage.addWishButton();
-		 //String ActualMessage = searchPage.retriveWishListAddMessageText();
-		 String messagee = searchPage.retriveWishListAddMessageText();
-		 System.out.println(messagee);
-		 
+		 String ExpectedMessagee = "Success: You have added HP LP3065 to your product comparison!\n"+ "×";
+		 String ActualMessage = searchPage.retriveWishListAddMessageText();
+		 Assert.assertEquals(ActualMessage, ExpectedMessagee,"No wishList Message is shown");	 
 	}
 
 }
