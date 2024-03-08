@@ -59,7 +59,7 @@ public class SearchTest extends Base {
 	
 	}
 	@Test (priority = 4)
-	public void verifyProductAddedSucessfuly() throws InterruptedException {
+	public void verifyProductAddedSucessfuly(){
 		
 		 HomePage homePage = new HomePage(driver);
 		 homePage.searchForAProduct("HP");
